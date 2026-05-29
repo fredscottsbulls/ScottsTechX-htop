@@ -1,67 +1,50 @@
-# ScottsTechX-htop
+# 📊 ScottsTechX htop
 
-⚙️ DevOps Tool | Part of ScottsTechX Tool Suite
+<p align="center">
+  <img src="https://img.shields.io/badge/htop-System-Monitor-00ff88?style=for-the-badge&logo=linux&logoColor=black" alt="htop"/>
+  <img src="https://img.shields.io/badge/Open-Source-00ff88?style=for-the-badge&logo=github&logoColor=black" alt="Open Source"/>
+</p>
 
----
-
-## About
-
-**System monitor - interactive process viewer with CPU/memory stats**
-
-Official ScottsTechX tool repo — part of the [ScottsTechX Tool Installer](https://github.com/fredscottsbulls/ScottsTechX-Tool-Installer) suite.
-
-**Official Website:** https://htop.dev/
+> **Interactive process viewer — real-time CPU/memory stats with color-coded display.**
 
 ---
 
-## Quick Install
+## ⚡ What It Does
 
-### Via ScottsTechX Tool Installer:
+htop is an interactive process viewer that displays CPU and memory usage in real-time with color-coded bars. Better than top — scrollable, killable, and sortable.
+
+## 🚀 Quick Usage
 
 ```bash
-scotts-techx install htop
+# Start htop
+htop
+
+# Start with specific sort
+htop -s PERCENT_CPU
+
+# Show only user processes
+htop -u fredscotts
+
+# Tree view (process hierarchy)
+htop -t
+
+# Batch mode (for scripting)
+htop -b -n 1 > process_snapshot.txt
 ```
 
-### Manual Install:
+## 🛡 Security Use
 
 ```bash
-# Linux/macOS/Git Bash
-curl -fsSL https://raw.githubusercontent.com/fredscottsbulls/ScottsTechX-htop/main/install.sh | bash
+# Watch for suspicious processes
+htop -u root
 
-# Windows PowerShell
-irm https://raw.githubusercontent.com/fredscottsbulls/ScottsTechX-htop/main/install.ps1 | iex
+# Check network connections
+htop then press 't' for tree, 'n' for network
+
+# Kill suspicious process
+# F9 -> signal -> SIGKILL
 ```
 
 ---
 
-## What is HTOP?
-
-System monitor - interactive process viewer with CPU/memory stats.
-
-For full documentation: https://htop.dev/
-
----
-
-## ScottsTechX Tool Suite (30 tools)
-
-| Category | Tools |
-|----------|-------|
-| Simple CLI | nmap, curl, wget, jq, git, python3, ffmpeg, traceroute, netcat, openssh |
-| Pentesting | hydra, sqlmap, nikto, hashcat, gobuster, searchsploit, masscan, burpsuite, ncat, Responder |
-| DevOps | docker, vim, htop, tmux, tar, make, openssl, ansible, kubectl, terraform |
-
-**[View Full Suite](https://github.com/fredscottsbulls/ScottsTechX-Tool-Installer)**
-
----
-
-## Disclaimer
-
-**For authorized use only.** Unauthorized access to computer systems is illegal.
-
----
-
-<div align="center">
-
-**ScottsTechX** | Fred Scotts | https://github.com/fredscottsbulls
-
-</div>
+MIT © 2026
